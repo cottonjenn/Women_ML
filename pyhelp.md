@@ -1,14 +1,15 @@
 How to create a virtual environment:
    - to create venv with latest version: `python3 -m venv .venv` <-- .venv or venv are standard, but you can name it other things
-   - to create venv with old version: `python3.12 -m venv .venv` <-- to get something like tensorflow
 
 Mac -->
+   - to create venv with old version: `python3.12 -m venv .venv12` <-- to get something like tensorflow --> activate with `source .venv12/bin/activate`
    - to activate: `source .venv/bin/activate` --> when done run `deactivate` or close IDE
    - upgrade pip: `pip install --upgrade pip`
    - to download packages: `pip install <library_name>`
       - packages: `pip install numpy selenium pandas matplotlib seaborn scikit-learn statsmodels openpyxl pyarrow jupyter ipykernel plotly scipy streamlit tensorflow tensorflow.keras` <-- data science / ML packages (NOT comma-delimited)
 
 Windows -->
+   - to create venv with old version: `py -3.12 -m venv .venv12` <-- to get something like tensorflow --> activate with `.\.venv12\Scripts\Activate`
    - To activate `.\.venv\Scripts\Activate` --> when done run `deactivate` or close IDE
    - upgrade pip: `python.exe -m pip install --upgrade pip`
    - packages: `pip install numpy, selenium, pandas, matplotlib, seaborn, scikit-learn, statsmodels, openpyxl, pyarrow, jupyter, ipykernel, plotly, scipy, streamlit` <-- (comma-delimited)
