@@ -1,6 +1,6 @@
 How to create a virtual environment:
-   to create venv with latest version: `python3 -m venv .venv` <-- .venv or venv are standard, but you can name it other things
-   to create vene with old version: `python3.12 -m venv .venv` <-- to get something like tensorflow
+   - to create venv with latest version: `python3 -m venv .venv` <-- .venv or venv are standard, but you can name it other things
+   - to create venv with old version: `python3.12 -m venv .venv` <-- to get something like tensorflow
 
 Mac -->
    - to activate: `source .venv/bin/activate` --> when done run `deactivate` or close IDE
@@ -18,4 +18,5 @@ Windows -->
 `pip --version` == pip 26.0.1
 
 to see all current notebooks run: `pip freeze > requirements.txt` <-- creates a requirements.txt file
+
 to install same versions somewhere else: `pip install -r requirements.txt`
