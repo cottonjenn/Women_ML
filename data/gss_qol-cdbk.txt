@@ -1,0 +1,5464 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      CODEBOOK
+
+
+                   GSS 1972-2024 Cumulative Datafile - Release 1
+                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                     Page i
+
+
+                                      CONTENTS
+
+
+      item                                                                page
+
+      year               GSS year for this respondent                        1
+      id                 Respondent ID number                                1
+      age                Age of respondent                                   2
+      sex                Respondents sex                                     2
+      race               Race of respondent                                  3
+      hispanic           R Hispanic Specific                                 4
+      ethnic             Country of family origin                            5
+      spethnic           Country of spouse's family origin                   5
+      uscitzn            If not born in US, is R a US citizen                6
+      educ               Highest year of school completed                    7
+      speduc             Highest year school completed, spouse               9
+      degree             R's highest degree                                 10
+      padeg              Father's (or oldest same-sex parent's) highest d   11
+      madeg              Mother's (or youngest same-sex parent's) highest   12
+      spdeg              Spouse's highest degree                            13
+      major1             College major 1                                    13
+      major2             College major 2                                    14
+      voedcol            Non-college postsecondary education (VOEDNME1)     14
+      voedncol           Non-college postsecondary education (VOEDNME2)     15
+      voednme1           Postsecondary institution attended for credit      16
+      voednme2           Postsecondary institution attended for credit      17
+      dipged             Diploma, ged, or other                             18
+      spdipged           Spouse diploma, ged, or other                      19
+      whenhs             When received hs degree                            20
+      whencol            When received college degree                       20
+      sector             Type of college respondent attended                21
+      spsector           Type of college spouse attended                    22
+      spbarate           Rate of BA degree earning in college spouse atte   23
+      speftotlt          Total number of students enrolled in college spo   24
+      spgradtounder      Ratio of graduate students to undergraduate stud   25
+      hapcohab           Happiness of relt with partner                     26
+      convictd           Convicted of crime ever                            27
+      lockedup           Prison or jail ever                                28
+      workdy             Days R normally works                              29
+      workhr             Hours R usually works                              30
+      spdays             Days spouse normally works                         31
+      sphour             Hours spouse usually works                         32
+      dwelling           Type of structure                                  33
+      dwelngh            Dwelling compared to others in nbrhd               34
+      dwelcity           Dwelling compared to others in city                35
+      dwelown            Does R own or rent home?                           36
+      godoc              Last week went to see a doctor?                    37
+      eatout             Last week had a meal at a restaurant               38
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page ii
+
+
+      item                                                                page
+
+      seefilm            Last week went to see a film?                      39
+      attrelig           Last week attended religious services?             40
+      religid            R's religious identity                             41
+      isco68             Respondent's occupation, 1970 census               42
+      isco681            Respondent's occupation, 1980 census               42
+      sei                Respondent socioeconomic index (1980)              43
+      sei10              R's socioeconomic index (2010)                     43
+      marital            Marital status                                     44
+      agewed             Age when first married                             45
+      divorce            Ever been divorced or separated                    46
+      widowed            Ever been widowed                                  47
+      wrkstat            Labor force status                                 48
+      hrs1               Number of hours worked last week                   49
+      hrs2               Number of hours usually work a week                50
+      evwork             Ever work as long as one year                      51
+      occ                R's census occupation code (1970)                  52
+      prestige           R's occupational prestige score(1970)              53
+      wrkslf             R self-emp or works for somebody                   54
+      wrkgovt            Govt or private employee                           55
+      commute            Travel time to work                                56
+      industry           R's industry code (1970)                           57
+      occ80              R's census occupation code (1980)                  57
+      prestg80           R's occupational prestige score(1980)              58
+      indus80            R's industry code (1980)                           58
+      indus07            Industry code based on NAICS 2007                  59
+      occonet            Occupation code based on O*Net                     60
+      occ10              R's census occupation code (2010)                  60
+      indus10            R's industry code (NAICS 2007)                     60
+      spwrksta           Spouse labor force status                          61
+      sphrs1             Number of hrs spouse worked last week              62
+      sphrs2             No. of hrs spouse usually works a week             63
+      spevwork           Spouse ever work as long as a year                 64
+      spocc              Spouse census occupation code (1970)               65
+      spocc80            Spouse census occupation code (1980)               65
+      spocc10            Spouse census occupation code (2010)               66
+      spoccindv          Spouse's occ/ind verbatim retrieved                66
+      spoccstatus        SPOCC10 coding status                              67
+      spocctag           SPOCC10 coding tag                                 68
+      sppres             Spouse's occupational prestige score (1970)        69
+      sppres80           Spouse's occupational prestige score (1980)        70
+      sppres10           Spouse occupational prestige score (2010)          70
+      sppres105plus      Spouse occupational prestige score using thresho   71
+      spwrkslf           Spouse self-emp. or works for somebody             72
+      spind              Spouse's industry code (1970)                      73
+      spind80            Spouse's industry code (1980)                      73
+      spind10            Spouse's industry code (NAICS 2007)                73
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                   Page iii
+
+
+      item                                                                page
+
+      spindstatus        SPIND10 coding status                              74
+      spindtag           SPIND10 coding tag                                 75
+      relig              R's religious preference                           76
+      denom              Specific denomination                              77
+      postlife           Belief in life after death                         78
+      neargod            How close Does R feel to god                       79
+      world1             World image:much evil vs. much good                80
+      world2             World image:the good must act vs. not              81
+      world3             World image:god not here vs. here                  82
+      world4             World image:man is good vs. corrupt                83
+      world5             World image:arts are good vs. not                  84
+      world6             World image:chaos vs. harmony                      85
+      world7             World image:ach. reveals god vs. not               86
+      happy              General happiness                                  87
+      hapmar             Happiness of marriage                              88
+      health             Condition of health                                89
+      life               Is life exciting or dull                           90
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                     Page 1
+
+
+      year               GSS year for this respondent
+
+           GSS year
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/1-4
+
+      ________________________________________________________________________
+
+      id                 Respondent ID number
+
+           Data type: numeric
+           Record/columns: 1/6-9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                     Page 2
+
+
+      age                Age of respondent
+
+           RESPONDENT'S AGE
+
+           VALUE  LABEL
+              89  89 or older
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/11-12
+
+      ________________________________________________________________________
+
+      sex                Respondents sex
+
+           CODE RESPONDENT'S SEX
+
+           VALUE  LABEL
+               1  male
+               2  female
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/14-15
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                     Page 3
+
+
+      race               Race of respondent
+
+           CODE WITHOUT ASKING ONLY IF THERE IS NO DOUBT IN YOUR MIND.
+            What race do you consider yourself? RECORD VERBATIM AND CODE.
+
+           VALUE  LABEL
+               1  white
+               2  black
+               3  other
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/17-18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                     Page 4
+
+
+      hispanic           R Hispanic Specific
+
+           IF R IS FEMALE, READ LATINA; IF MALE, READ LATINO.
+           Are you Spanish, Hispanic, or Latino/Latina?
+           Yes . . . . . (ASK A)
+           No   . . . . . . (GO TO NEXT QUESTION)
+           IF YES:                  Which group are you from?
+           Mexican, Mexican American, Chicano/Chicana
+           Puerto Rican
+           Cuban
+           Other
+           As of 2024, HISPANIC has been recoded to remove certain sensitive
+           categories. This has been retroactively applied to all previous years
+           of HISPANIC. The original HISPANIC containing data from 2000 to 2022
+           has been renamed HISPANIC_0022.
+
+           VALUE  LABEL
+               1  not hispanic
+               2  mexican, mexican american, chicano/a
+               3  puerto rican
+               4  cuban
+               5  another hispanic, latino, or spanish origin
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/20-21
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                     Page 5
+
+
+      ethnic             Country of family origin
+
+           From what countries or part of the world did your ancestors come?
+            A. IF MORE THAN ONE COUNTRY NAMED:Which one of these countries do
+           you feel closer to?
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/23-25
+
+      ________________________________________________________________________
+
+      spethnic           Country of spouse's family origin
+
+           From what countries or part of the world did your
+           (wife''s/husband''s) ancestors come?
+            A. IF MORE THAN ONE COUNTRY NAMED:  Which one of these countries
+           does your (wife/husband) feel closer to?
+            A. SUMMARY ETHNICITY OF SPOUSE
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/27-28
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                     Page 6
+
+
+      uscitzn            If not born in US, is R a US citizen
+
+           If not born in US, is R a US citizen
+            As of 2024, USCITZN has been recoded to simplify responses. It is
+           now a synthetic variable which represents the original USCITZN, as
+           well as the experimental USCITZNV and USCITZNNV. This recode is
+           retroactive, covering all previous years of USCITZN. The original
+           data have been preserved in USCITZN_0822. USCITZNV and USCITZNNV will
+           not be made available in 2024.
+
+           VALUE  LABEL
+               1  a u.s. citizen
+               2  not a u.s. citizen
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/30-31
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                     Page 7
+
+
+      educ               Highest year of school completed
+
+           ASK ALL PARTS OF QUESTION ABOUT RESPONDENT BEFORE GOING ON TO ASK
+           ABOUT R'S FATHER; AND THEN R'S MOTHER; THEN R'S SPOUSE, IF R IS
+           CURRENTLY MARRIED.
+           A. What is the highest grade in elementary school or high school that
+           (you/your father/ your mother/your [husband/wife]) finished and got
+           credit for? CODE EXACT GRADE.
+           B. IF FINISHED 9th-12th GRADE OR DK*: Did (you/he/she) ever get a
+           high school diploma or a GED certificate? [SEE D BELOW.] [See
+           REMARKS]
+           C. Did (you/he/she) complete one or more years of college for
+           credit--not including schooling such as business college, technical
+           or vocational school? IF YES: How many years did (you/he/she)
+           complete?
+            Do you (Does [he/she]) have any college degrees? (IF YES: What
+           degree or degrees?) CODE HIGHEST DEGREE EARNED.
+
+           VALUE  LABEL
+               0  no formal schooling
+               1  1st grade
+               2  2nd grade
+               3  3rd grade
+               4  4th grade
+               5  5th grade
+               6  6th grade
+               7  7th grade
+               8  8th grade
+               9  9th grade
+              10  10th grade
+              11  11th grade
+              12  12th grade
+              13  1 year of college
+              14  2 years of college
+              15  3 years of college
+              16  4 years of college
+              17  5 years of college
+              18  6 years of college
+              19  7 years of college
+              20  8 or more years of college
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                     Page 8
+
+
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/33-34
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                     Page 9
+
+
+      speduc             Highest year school completed, spouse
+
+           RESPONDENT'S SPOUSE'S EDUCATION
+
+           VALUE  LABEL
+               0  no formal schooling
+               1  1st grade
+               2  2nd grade
+               3  3rd grade
+               4  4th grade
+               5  5th grade
+               6  6th grade
+               7  7th grade
+               8  8th grade
+               9  9th grade
+              10  10th grade
+              11  11th grade
+              12  12th grade
+              13  1 year of college
+              14  2 years of college
+              15  3 years of college
+              16  4 years of college
+              17  5 years of college
+              18  6 years of college
+              19  7 years of college
+              20  8 or more years of college
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/36-37
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 10
+
+
+      degree             R's highest degree
+
+           RESPONDENT'S DEGREE
+
+           VALUE  LABEL
+               0  less than high school
+               1  high school
+               2  associate/junior college
+               3  bachelor's
+               4  graduate
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/39-40
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 11
+
+
+      padeg              Father's (or oldest same-sex parent's) highest degree
+
+           RESPONDENT'S FATHER'S (SUBSTITUTE FATHER'S) DEGREE
+
+           VALUE  LABEL
+               0  less than high school
+               1  high school
+               2  associate/junior college
+               3  bachelor's
+               4  graduate
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/42-43
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 12
+
+
+      madeg              Mother's (or youngest same-sex parent's) highest degree
+
+           RESPONDENT'S MOTHER'S (SUBSTITUTE MOTHER'S) DEGREE
+
+           VALUE  LABEL
+               0  less than high school
+               1  high school
+               2  associate/junior college
+               3  bachelor's
+               4  graduate
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/45-46
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 13
+
+
+      spdeg              Spouse's highest degree
+
+           RESPONDENT'S SPOUSE'S DEGREE
+
+           VALUE  LABEL
+               0  less than high school
+               1  high school
+               2  associate/junior college
+               3  bachelor's
+               4  graduate
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/48-49
+
+      ________________________________________________________________________
+
+      major1             College major 1
+
+           What was your major or field of study when you received your
+           (RESPONDENT'S COLLEGE DEGREE) degree?
+            As of 2024, MAJOR1 has been recoded to only account for 39
+           categories. This has been retroactively applied to all previous years
+           of MAJOR1. The original MAJOR1 containing data from 2012 to 2022 has
+           been renamed MAJOR1_1222.
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/51-52
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 14
+
+
+      major2             College major 2
+
+           What was your major or field of study when you received your
+           (RESPONDENT'S COLLEGE DEGREE) degree?
+            As of 2024, MAJOR2 has been recoded to only account for 39
+           categories. This has been retroactively applied to all previous years
+           of MAJOR2. The original MAJOR2 containing data from 2012 to 2022 has
+           been renamed MAJOR2_1222.
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/54-55
+
+      ________________________________________________________________________
+
+      voedcol            Non-college postsecondary education (VOEDNME1)
+
+           In what year did you receive the (COLLEGE NAME) degree?
+           E. Besides attending college for credit, did you complete any courses
+           for credit at an institution such as a business college, technical or
+           vocational school?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/57-58
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 15
+
+
+      voedncol           Non-college postsecondary education (VOEDNME2)
+
+           In what year did you receive the (COLLEGE NAME) degree?
+           G. Did you complete any courses for credit at an institution such as
+           a business college, technical or vocational school?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/60-61
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 16
+
+
+      voednme1           Postsecondary institution attended for credit
+
+           In what year did you receive the (COLLEGE NAME) degree?
+           F. IF YES: What institution was that?
+
+           VALUE  LABEL
+               1  jail/prison
+               2  high school
+               3  company/business
+               4  vocational school/trades/technical (not high school, not college)
+               5  secretarial school
+               6  adult education/school
+               7  medical/nursing/health/dental/hospital
+               8  union
+               9  armed forces
+              10  college/university
+              11  art/design
+              12  business college (not business school at a university)
+              13  home study/correspondence
+              14  job corp
+              15  beauty school/cosmetology
+              16  insurance, real estate, finance, executive management
+              17  police/fire academy; training
+              18  development center
+              19  career center
+              20  foreign college/university
+              30  other
+              40  unable to code response, unclear, not identifiable
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/63-64
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 17
+
+
+      voednme2           Postsecondary institution attended for credit
+
+           In what year did you receive the (COLLEGE NAME) degree?
+           H. IF YES: What institution was that?
+
+           VALUE  LABEL
+               1  jail/prison
+               2  high school
+               3  company/business
+               4  vocational school/trades/technical (not high school, not college)
+               5  secretarial school
+               6  adult education/school
+               7  medical/nursing/health/dental/hospital
+               8  union
+               9  armed forces
+              10  college/university
+              11  art/design
+              12  business college (not business school at a university)
+              13  home study/correspondence
+              14  job corp
+              15  beauty school/cosmetology
+              16  insurance, real estate, finance, executive management
+              17  police/fire academy; training
+              18  development center
+              19  career center
+              20  foreign college/university
+              30  other
+              40  unable to code response, unclear, not identifiable
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/66-67
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 18
+
+
+      dipged             Diploma, ged, or other
+
+           Was that a diploma awarded by your high school at graduation at the
+           end of 12th grade, a GED awarded after you took a test, or something
+           else?
+            As of 2024, DIPGED has been recoded to only account for three
+           categories. This has been retroactively applied to all previous years
+           of DIPGED. The original DIPGED containing data 2012 to 2022 has been
+           renamed DIPGED_1222.
+
+           VALUE  LABEL
+               1  high school diploma
+               2  ged
+               3  other
+               5  high school diploma after post high school class
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/69-70
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 19
+
+
+      spdipged           Spouse diploma, ged, or other
+
+           Was that a diploma awarded by (RESPONDENT''S SPOUSE)''s high school
+           at graduation at the end of 12th grade, a GED awarded after
+           (RESPONDENT''S SPOUSE) took a test, or something else?
+
+           VALUE  LABEL
+               1  high school diploma
+               2  ged
+               3  other
+               5  high school diploma after post high school class
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/72-73
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 20
+
+
+      whenhs             When received hs degree
+
+           In what year did you receive your high school degree?
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/75-78
+
+      ________________________________________________________________________
+
+      whencol            When received college degree
+
+           In what year did you receive the (COLLEGE NAME) degree?
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/80-83
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 21
+
+
+      sector             Type of college respondent attended
+
+           In what year did you receive the (COLLEGE NAME) degree?
+           A. Sector of Institution?
+
+           VALUE  LABEL
+               0  administrative unit
+               1  public, 4-year or above
+               2  private not-for-profit, 4-year or above
+               3  private for-profit, 4-year or above
+               4  public, 2-year
+               5  private not-for-profit, 2-year or less
+               6  private for-profit, 2-year
+               7  public, less than 2-year
+               9  private for-profit, less than 2-year
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/85-86
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 22
+
+
+      spsector           Type of college spouse attended
+
+           In what year did your spouse receive their (COLLEGE NAME) degree?
+           I. Sector of Institution?
+
+           VALUE  LABEL
+               0  administrative unit
+               1  public, 4-year or above
+               2  private not-for-profit, 4-year or above
+               3  private for-profit, 4-year or above
+               4  public, 2-year
+               5  private not-for-profit, 2-year or less
+               6  private for-profit, 2-year
+               7  public, less than 2-year
+               9  private for-profit, less than 2-year
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/88-89
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 23
+
+
+      spbarate           Rate of BA degree earning in college spouse attended
+
+           In what year did you receive the (COLLEGE NAME) degree?
+           K. Graduation Rate
+
+           VALUE  LABEL
+               1  0-39.9%
+               2  40-57.9%
+               3  58% or over
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/91-92
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 24
+
+
+      speftotlt          Total number of students enrolled in college spouse attended
+
+           In what year did you receive the (COLLEGE NAME) degree?
+           J. Total Fall Enrollment
+
+           VALUE  LABEL
+               1  0-467 students enrolled
+               2  468 or more students
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/94-95
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 25
+
+
+      spgradtounder      Ratio of graduate students to undergraduate students in college spouse attended
+
+           In what year did you receive the (COLLEGE NAME) degree?
+           L. Ratio of Graduate to Undergraduate students.
+
+           VALUE  LABEL
+               1  0-.210 graduate student per undergraduate student
+               2  .211 or over
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/97-98
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 26
+
+
+      hapcohab           Happiness of relt with partner
+
+           B. Taking things all together, would you say that your relationship
+           with your partner is very happy, pretty happy, or not too happy?
+
+           VALUE  LABEL
+               1  very happy
+               2  pretty happy
+               3  not too happy
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/100-101
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 27
+
+
+      convictd           Convicted of crime ever
+
+           B. Not counting minor traffic offenses, have you ever been convicted
+           of a crime?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/103-104
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 28
+
+
+      lockedup           Prison or jail ever
+
+           C. Have you ever spent any time in prison or jail?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/106-107
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 29
+
+
+      workdy             Days R normally works
+
+           What days of the week do you normally work?  CODE ALL THAT APPLY.
+
+           VALUE  LABEL
+               1  mon to fri
+               2  mon to fri,sat
+               3  mon to fri,sun
+               4  wkend plus
+               5  no schedule
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/109-110
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 30
+
+
+      workhr             Hours R usually works
+
+           What hours do you usually work--days, evenings, or nights?  CIRCLE
+           ONE CODE.
+
+           VALUE  LABEL
+               1  reg day
+               2  eve
+               3  nights
+               4  varies
+               5  other
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/112-113
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 31
+
+
+      spdays             Days spouse normally works
+
+           What days of the week does (SPOUSE) normally work?  CODE ALL THAT
+           APPLY.
+
+           VALUE  LABEL
+               1  mon to fri
+               2  mon to fri,sat
+               3  mon to fri,sun
+               4  wkend plus
+               5  no schedule
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/115-116
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 32
+
+
+      sphour             Hours spouse usually works
+
+           What hours does (he/she) usually work--days, evenings, or nights?
+           CIRCLE ONE CODE.
+
+           VALUE  LABEL
+               1  reg day
+               2  eve
+               3  nights
+               4  varies
+               5  other
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/118-119
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 33
+
+
+      dwelling           Type of structure
+
+           DWELLING TYPE.
+
+           VALUE  LABEL
+               1  trailer
+               2  detached single family house
+               3  2-family house, 2 units side-by-side
+               4  2-family house, 2 units one above the other
+               5  detached 3-4 family house
+               6  row house (3 or more units in an attached row)
+               7  apartment house (5 or more units, 3 stories or less)
+               8  apartment house (5 or more units, 4 stories or more)
+               9  apartment in a partly commercial structure
+              10  other
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/121-122
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 34
+
+
+      dwelngh            Dwelling compared to others in nbrhd
+
+           A. Compared to houses/apartments in the neighborhood, would you say
+           the house/ apartment was . . .
+
+           VALUE  LABEL
+               1  far above average
+               2  above average
+               3  average
+               4  below average
+               5  far below average
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/124-125
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 35
+
+
+      dwelcity           Dwelling compared to others in city
+
+           B. Compared to houses/apartments in the city/town/county, would you
+           say the house was . . .
+
+           VALUE  LABEL
+               1  far above average
+               2  above average
+               3  average
+               4  below average
+               5  far below average
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/127-128
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 36
+
+
+      dwelown            Does R own or rent home?
+
+           (Do you/Does your family) own your (home/apartment), pay rent, or
+           what?
+
+           VALUE  LABEL
+               1  own or is buying
+               2  pays rent
+               3  other
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/130-131
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 37
+
+
+      godoc              Last week went to see a doctor?
+
+           Now I'm going to ask you about things you did during the last seven
+           days. I'm only interested in what you did during the last seven days.
+
+           From last (DAY OF WEEK) to today did you
+           A. Go to see a doctor or receive medical treatment at a clinic or
+           hospital?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/133-134
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 38
+
+
+      eatout             Last week had a meal at a restaurant
+
+           Now I'm going to ask you about things you did during the last seven
+           days. I'm only interested in what you did during the last seven days.
+
+           From last (DAY OF WEEK) to today did you
+           B. Have a meal (breakfast, lunch or dinner) at a restaurant
+           (including fast food places and take-outs)?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/136-137
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 39
+
+
+      seefilm            Last week went to see a film?
+
+           Now I'm going to ask you about things you did during the last seven
+           days. I'm only interested in what you did during the last seven days.
+
+           From last (DAY OF WEEK) to today did you
+           C. Go to a movie theater to see a film?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/139-140
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 40
+
+
+      attrelig           Last week attended religious services?
+
+           Now I'm going to ask you about things you did during the last seven
+           days. I'm only interested in what you did during the last seven days.
+
+           From last (DAY OF WEEK) to today did you
+           D. Attend religious services?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/142-143
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 41
+
+
+      religid            R's religious identity
+
+           A. When it comes to your religious identity, would you say you are a
+           fundamentalist, evangelical, mainline, or liberal Protestant or do
+           none of these describe you?
+
+           VALUE  LABEL
+               1  fundamentalist
+               2  evangelical
+               3  mainline
+               4  liberal
+               5  none
+               6  other
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/145-146
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 42
+
+
+      isco68             Respondent's occupation, 1970 census
+
+           Respondent's occupation (International Standard Classification
+           Codes-1968)
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/148-151
+
+      ________________________________________________________________________
+
+      isco681            Respondent's occupation, 1980 census
+
+           Respondent's occupation (International Standard Classification
+           Codes-1968)
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/153-156
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 43
+
+
+      sei                Respondent socioeconomic index (1980)
+
+           Respondent socioeconomic index.
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  i don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Decimals: 1
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/158-161
+
+      ________________________________________________________________________
+
+      sei10              R's socioeconomic index (2010)
+
+           SEI10 is based on the 2010 Census occupation classification. It is
+           estimated from 539 occupational categories, using PRESTG105PLUS.
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  i don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Decimals: 1
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/163-166
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 44
+
+
+      marital            Marital status
+
+           Are you currently--married, widowed, divorced, separated, or have you
+           never been married?
+
+           VALUE  LABEL
+               1  married
+               2  widowed
+               3  divorced
+               4  separated
+               5  never married
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/168-169
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 45
+
+
+      agewed             Age when first married
+
+           Are you currently--married, widowed, divorced, separated, or have you
+           never been married?
+            A. IF EVER MARRIED:   How old were you when you first married?
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/171-172
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 46
+
+
+      divorce            Ever been divorced or separated
+
+           Are you currently--married, widowed, divorced, separated, or have you
+           never been married?
+            B. IF CURRENTLY MARRIED OR WIDOWED:  Have you ever been divorced or
+           legally separated?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/174-175
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 47
+
+
+      widowed            Ever been widowed
+
+           Are you currently--married, widowed, divorced, separated, or have you
+           never been married?
+            C. IF CURRENTLY MARRIED, SEPARATED, OR DIVORCED: Have you ever been
+           widowed?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/177-178
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 48
+
+
+      wrkstat            Labor force status
+
+           Last week were you working full time, part time, going to school,
+           keeping house, or what?
+
+           VALUE  LABEL
+               1  working full time
+               2  working part time
+               3  with a job, but not at work because of temporary illness, vacation, strike
+               4  unemployed, laid off, looking for work
+               5  retired
+               6  in school
+               7  keeping house
+               8  other
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/180-181
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 49
+
+
+      hrs1               Number of hours worked last week
+
+           Last week were you working full time, part time, going to school,
+           keeping house, or what?
+            A. IF WORKING, FULL OR PART TIME:  How many hours did you work last
+           week, at all jobs?
+
+           VALUE  LABEL
+              89  89+ hours
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/183-184
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 50
+
+
+      hrs2               Number of hours usually work a week
+
+           Last week were you working full time, part time, going to school,
+           keeping house, or what?
+            B. IF WITH A JOB, BUT NOT AT WORK:  How many hours a week do you
+           usually work, at all jobs?
+
+           VALUE  LABEL
+              89  89+ hours
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/186-187
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 51
+
+
+      evwork             Ever work as long as one year
+
+           Last week were you working full time, part time, going to school,
+           keeping house, or what?
+            C. IF RETIRED, IN SCHOOL, KEEPING HOUSE, OR OTHER: Did you ever work
+           for as long as one year?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/189-190
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 52
+
+
+      occ                R's census occupation code (1970)
+
+           A. What kind of work do you (did you normally) do?  That is, what
+           (is/was) your job called?
+           OCCUPATION:  [See REMARKS]
+           B. What (do/did) you actually do in that job?  Tell me, what
+           (are/were) some of your main duties?
+           C. What kind of place (do/did) you work for?
+           INDUSTRY:  [See REMARKS]
+           D. What (do/did) they (make/do)?
+           E. (Are/Were) you self employed or (do/did) you work for someone
+           else?
+           F. (Are/Were) you employed by the federal, state or local government
+           or by a private employer (including non-profit organizations)?
+           G. About how much time (does/did) it usually take you to travel to
+           work - about how many minutes?
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/192-194
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 53
+
+
+      prestige           R's occupational prestige score(1970)
+
+           A. What kind of work do you (did you normally) do?  That is, what
+           (is/was) your job called?
+           OCCUPATION:  [See REMARKS]
+           B. What (do/did) you actually do in that job?  Tell me, what
+           (are/were) some of your main duties?
+           C. What kind of place (do/did) you work for?
+           INDUSTRY:  [See REMARKS]
+           D. What (do/did) they (make/do)?
+           E. (Are/Were) you self employed or (do/did) you work for someone
+           else?
+           F. (Are/Were) you employed by the federal, state or local government
+           or by a private employer (including non-profit organizations)?
+           G. About how much time (does/did) it usually take you to travel to
+           work - about how many minutes?
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/196-197
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 54
+
+
+      wrkslf             R self-emp or works for somebody
+
+           A. What kind of work do you (did you normally) do?  That is, what
+           (is/was) your job called?
+           OCCUPATION:  [See REMARKS]
+           B. What (do/did) you actually do in that job?  Tell me, what
+           (are/were) some of your main duties?
+           C. What kind of place (do/did) you work for?
+           INDUSTRY:  [See REMARKS]
+           D. What (do/did) they (make/do)?
+           E. (Are/Were) you self employed or (do/did) you work for someone
+           else?
+           F. (Are/Were) you employed by the federal, state or local government
+           or by a private employer (including non-profit organizations)?
+           G. About how much time (does/did) it usually take you to travel to
+           work - about how many minutes?
+
+           VALUE  LABEL
+               1  self-employed
+               2  someone else
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/199-200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 55
+
+
+      wrkgovt            Govt or private employee
+
+           A. What kind of work do you (did you normally) do?  That is, what
+           (is/was) your job called?
+           OCCUPATION:  [See REMARKS]
+           B. What (do/did) you actually do in that job?  Tell me, what
+           (are/were) some of your main duties?
+           C. What kind of place (do/did) you work for?
+           INDUSTRY:  [See REMARKS]
+           D. What (do/did) they (make/do)?
+           E. (Are/Were) you self employed or (do/did) you work for someone
+           else?
+           F. (Are/Were) you employed by the federal, state or local government
+           or by a private employer (including non-profit organizations)?
+           G. About how much time (does/did) it usually take you to travel to
+           work - about how many minutes?
+
+           VALUE  LABEL
+               1  government
+               2  private
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/202-203
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 56
+
+
+      commute            Travel time to work
+
+           A. What kind of work do you (did you normally) do?  That is, what
+           (is/was) your job called?
+           OCCUPATION:  [See REMARKS]
+           B. What (do/did) you actually do in that job?  Tell me, what
+           (are/were) some of your main duties?
+           C. What kind of place (do/did) you work for?
+           INDUSTRY:  [See REMARKS]
+           D. What (do/did) they (make/do)?
+           E. (Are/Were) you self employed or (do/did) you work for someone
+           else?
+           F. (Are/Were) you employed by the federal, state or local government
+           or by a private employer (including non-profit organizations)?
+           G. About how much time (does/did) it usually take you to travel to
+           work - about how many minutes?
+
+           VALUE  LABEL
+              97  97+ minutes
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/205-206
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 57
+
+
+      industry           R's industry code (1970)
+
+           A. What kind of work do you (did you normally) do?  That is, what
+           (is/was) your job called?
+           OCCUPATION:  [See REMARKS]
+           B. What (do/did) you actually do in that job?  Tell me, what
+           (are/were) some of your main duties?
+           C. What kind of place (do/did) you work for?
+           INDUSTRY:  [See REMARKS]
+           D. What (do/did) they (make/do)?
+           E. (Are/Were) you self employed or (do/did) you work for someone
+           else?
+           F. (Are/Were) you employed by the federal, state or local government
+           or by a private employer (including non-profit organizations)?
+           G. About how much time (does/did) it usually take you to travel to
+           work - about how many minutes?
+
+           Data type: numeric
+           Missing-data codes: .m,.n,.y
+           Record/columns: 1/208-210
+
+      ________________________________________________________________________
+
+      occ80              R's census occupation code (1980)
+
+           Respondent's Occupation, Prestige, and Industry
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/212-214
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 58
+
+
+      prestg80           R's occupational prestige score(1980)
+
+           Respondent's Occupation, Prestige, and Industry
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/216-217
+
+      ________________________________________________________________________
+
+      indus80            R's industry code (1980)
+
+           Respondent's Occupation, Prestige, and Industry
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/219-221
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 59
+
+
+      indus07            Industry code based on NAICS 2007
+
+           C. What kind of place (do/did) you work for?
+           D. What (do/did) they (make/do)?
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/223-228
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 60
+
+
+      occonet            Occupation code based on O*Net
+
+           A. What kind of work do you (did you normally) do? That is, what
+           (is/was) your job called?
+           B. What (do/did) you actually do in that job? Tell me, what are/were,
+           some of your main duties?
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Decimals: 2
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/230-238
+
+      ________________________________________________________________________
+
+      occ10              R's census occupation code (2010)
+
+           Respondent's Occupation, Prestige, and Industry
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/240-243
+
+      ________________________________________________________________________
+
+      indus10            R's industry code (NAICS 2007)
+
+           Respondent's Occupation, Prestige, and Industry
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/245-248
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 61
+
+
+      spwrksta           Spouse labor force status
+
+           Last week was your (wife/husband) working full time, part time, going
+           to school, keeping house, or what?
+
+           VALUE  LABEL
+               1  working full time
+               2  working part time
+               3  with a job, but not at work because of temporary illness, vacation, strike
+               4  unemployed, laid off, looking for work
+               5  retired
+               6  in school
+               7  keeping house
+               8  other
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/250-251
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 62
+
+
+      sphrs1             Number of hrs spouse worked last week
+
+           Last week was your (wife/husband) working full time, part time, going
+           to school, keeping house, or what?
+            A. IF WORKING, FULL OR PART TIME:  How many hours did (he/she) work
+           last week, at all jobs?
+
+           VALUE  LABEL
+              89  89+ hours
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/253-254
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 63
+
+
+      sphrs2             No. of hrs spouse usually works a week
+
+           Last week was your (wife/husband) working full time, part time, going
+           to school, keeping house, or what?
+            B. IF WITH A JOB, BUT NOT AT WORK: How many hours a week does
+           (he/she) usually work, at all jobs?
+
+           VALUE  LABEL
+              89  89+ hours
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/256-257
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 64
+
+
+      spevwork           Spouse ever work as long as a year
+
+           Last week was your (wife/husband) working full time, part time, going
+           to school, keeping house, or what?
+            C. IF RETIRED, IN SCHOOL, KEEPING HOUSE, OR OTHER:  Did (he/she)
+           ever work for as long as one year?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/259-260
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 65
+
+
+      spocc              Spouse census occupation code (1970)
+
+           A. What kind of work (does/did) your [SPOUSE] normally do? That is,
+           what (is/was) (his/her) job called?
+           OCCUPATION: [See REMARKS]
+           B. What (does/did) [SPOUSE] actually do in that job? Tell me, what
+           (are/were) some of (his/her) main duties?
+           C. What kind of place (does/did) [SPOUSE] work for?
+           INDUSTRY: [See REMARKS]
+           D. What (do/did) they (make/do)?
+           E. (Is/Was) (he/she) self-employed or (does/did) (he/she) work for
+           someone else?
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/262-264
+
+      ________________________________________________________________________
+
+      spocc80            Spouse census occupation code (1980)
+
+           Spouse's Occupation, Prestige, and Industry
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/266-268
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 66
+
+
+      spocc10            Spouse census occupation code (2010)
+
+           Spouse's Occupation, Prestige, and Industry
+
+           NOTE: SPOCC10 and SPIND10 are coded using the U.S. Bureau of the
+           Census occupation (2010) and industry codes (NAICS 2007). The numbers
+           are collapsed for convenience of display.
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/270-273
+
+      ________________________________________________________________________
+
+      spoccindv          Spouse's occ/ind verbatim retrieved
+
+           Spouse's OCC/IND verbatim recovered
+
+           VALUE  LABEL
+               0  no verbatims for sp
+               1  verbatims for sp
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/275-276
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 67
+
+
+      spoccstatus        SPOCC10 coding status
+
+           SPOCC10 Coding Status
+
+           VALUE  LABEL
+               1  found, iap
+               2  found, no answer
+               3  found, coded
+               4  not found, iap
+               5  not found, no answer
+               6  not found, coded
+               7  not found, no code assigned
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/278-279
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 68
+
+
+      spocctag           SPOCC10 coding tag
+
+           SPOCC10 Coding Tag
+
+           VALUE  LABEL
+               1  found
+               2  not found, assigned
+               3  not found, not assigned
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/281-282
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 69
+
+
+      sppres             Spouse's occupational prestige score (1970)
+
+           A. What kind of work (does/did) your [SPOUSE] normally do? That is,
+           what (is/was) (his/her) job called?
+           OCCUPATION: [See REMARKS]
+           B. What (does/did) [SPOUSE] actually do in that job? Tell me, what
+           (are/were) some of (his/her) main duties?
+           C. What kind of place (does/did) [SPOUSE] work for?
+           INDUSTRY: [See REMARKS]
+           D. What (do/did) they (make/do)?
+           E. (Is/Was) (he/she) self-employed or (does/did) (he/she) work for
+           someone else?
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/284-285
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 70
+
+
+      sppres80           Spouse's occupational prestige score (1980)
+
+           Spouse's Occupation, Prestige, and Industry
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/287-288
+
+      ________________________________________________________________________
+
+      sppres10           Spouse occupational prestige score (2010)
+
+           SPPRES10 is based on the 2010 Census occupation classification. This
+           standard prestige score is a simple mean value of ratings for each
+           occupation category, converted to a scale of 0 (bottom) to 100 (top).
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/290-291
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 71
+
+
+      sppres105plus      Spouse occupational prestige score using threshold method (2010)
+
+           SPPRES105PLUS is based on the 2010 Census occupation classification.
+           This prestige score is calculated using an alternative method, based
+           on the percentage of ratings that is greater than or equal to a
+           threshold (rating five). The effect of individual raters is also
+           removed using hierarchical linear modeling (HLM).
+
+           VALUE  LABEL
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/293-294
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 72
+
+
+      spwrkslf           Spouse self-emp. or works for somebody
+
+           A. What kind of work (does/did) your [SPOUSE] normally do? That is,
+           what (is/was) (his/her) job called?
+           OCCUPATION: [See REMARKS]
+           B. What (does/did) [SPOUSE] actually do in that job? Tell me, what
+           (are/were) some of (his/her) main duties?
+           C. What kind of place (does/did) [SPOUSE] work for?
+           INDUSTRY: [See REMARKS]
+           D. What (do/did) they (make/do)?
+           E. (Is/Was) (he/she) self-employed or (does/did) (he/she) work for
+           someone else?
+
+           VALUE  LABEL
+               1  self-employed
+               2  someone else
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/296-297
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 73
+
+
+      spind              Spouse's industry code (1970)
+
+           A. What kind of work (does/did) your [SPOUSE] normally do? That is,
+           what (is/was) (his/her) job called?
+           OCCUPATION: [See REMARKS]
+           B. What (does/did) [SPOUSE] actually do in that job? Tell me, what
+           (are/were) some of (his/her) main duties?
+           C. What kind of place (does/did) [SPOUSE] work for?
+           INDUSTRY: [See REMARKS]
+           D. What (do/did) they (make/do)?
+           E. (Is/Was) (he/she) self-employed or (does/did) (he/she) work for
+           someone else?
+
+           Data type: numeric
+           Missing-data codes: .m,.n,.y
+           Record/columns: 1/299-301
+
+      ________________________________________________________________________
+
+      spind80            Spouse's industry code (1980)
+
+           Spouse's Occupation, Prestige, and Industry
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/303-305
+
+      ________________________________________________________________________
+
+      spind10            Spouse's industry code (NAICS 2007)
+
+           Spouse's Occupation, Prestige, and Industry
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/307-310
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 74
+
+
+      spindstatus        SPIND10 coding status
+
+           SPIND10 Coding Status
+
+           VALUE  LABEL
+               1  found, iap
+               2  found, no answer
+               3  found, coded
+               4  not found, iap
+               5  not found, no answer
+               6  not found, coded
+               7  not found, no code assigned
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/312-313
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 75
+
+
+      spindtag           SPIND10 coding tag
+
+           SPIND10 Coding Tag
+
+           VALUE  LABEL
+               1  found
+               2  not found, assigned
+               3  not found, not assigned
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/315-316
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 76
+
+
+      relig              R's religious preference
+
+           What is your religious preference?  Is it Protestant, Catholic,
+           Jewish, some other religion, or no religion?
+
+           VALUE  LABEL
+               1  protestant
+               2  catholic
+               3  jewish
+               4  none
+               5  other
+               6  buddhism
+               7  hinduism
+               8  other eastern religions
+               9  muslim/islam
+              10  orthodox-christian
+              11  christian
+              12  native american
+              13  inter-nondenominational
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/318-319
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 77
+
+
+      denom              Specific denomination
+
+           What is your religious preference?  Is it Protestant, Catholic,
+           Jewish, some other religion, or no religion?  A. What specific
+           denomination is that, if any?
+            As of 2024, DENOM has been recoded to only account for seven broad
+           denomination categories. This has been retroactively applied to all
+           previous years of DENOM. The original DENOM containing data 1972 to
+           2022 has been renamed DENOM_7222.
+
+           VALUE  LABEL
+              10  american baptist association
+              11  american baptist churches in the u.s.a.
+              12  national baptist convention of america
+              13  national baptist convention u.s.a., inc.
+              14  southern baptist convention
+              15  other baptist churches
+              18  baptist, don't know which
+              20  african methodist episcopal church
+              21  african methodist episcopal zion church
+              22  united methodist church
+              23  other methodist churches
+              28  methodist, don't know which
+              30  american lutheran church
+              31  lutheran church in america
+              32  lutheran church - missouri synod
+              33  wisconsin evangelical lutheran synod
+              34  other lutheran churches
+              35  evangelical lutheran
+              38  lutheran, don't know which
+              40  presbyterian church in the u.s.
+              41  united presbyterian church in the u.s.a.
+              42  other presbyterian churches
+              43  presbyterian, merged
+              48  presbyterian, don't know which
+              50  episcopal church
+              60  other, specify
+              70  no denomination or non-denominational church
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 78
+
+
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/321-322
+
+      ________________________________________________________________________
+
+      postlife           Belief in life after death
+
+           Do you believe there is a life after death?
+
+           VALUE  LABEL
+               1  yes
+               2  no
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/324-325
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 79
+
+
+      neargod            How close Does R feel to god
+
+           How close do you feel to God most of the time?  Would you say
+           extremely close, somewhat close, not very close, or not close at all?
+
+           VALUE  LABEL
+               1  extremely close
+               2  somewhat close
+               3  not very close
+               4  not close at all
+               5  does not believe
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/327-328
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 80
+
+
+      world1             World image:much evil vs. much good
+
+           People have different images of the world and human nature. We'd like
+           to know the kinds of images you have. Here is a card with sets of
+           contrasting images. On a scale of 1-7 where would you place your
+           image of the world  and human nature between the two contrasting
+           images? (HAND CARD AH)
+           Look at the first set of contrasting images. If you think that "The
+           world is basically filled with evil and sin," you would place
+           yourself at 1. If you think "There is much goodness in the world
+           which hints at God's goodness" you would place yourself at 7. If you
+           think things are somewhere between these two you would place yourself
+           at 2, 3,4, 5 or 6. (REPEAT EXAMPLE AS NECESSARY FOR EACH ITEM A-F)
+           Where would you place your image of the world on the scale for . . .?
+           (READ EACH SET AND CIRCLE ONE CODE FOR EACH)
+
+           VALUE  LABEL
+               1  world is evil
+               7  world is good
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/330-331
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 81
+
+
+      world2             World image:the good must act vs. not
+
+           People have different images of the world and human nature. We'd like
+           to know the kinds of images you have. Here is a card with sets of
+           contrasting images. On a scale of 1-7 where would you place your
+           image of the world  and human nature between the two contrasting
+           images? (HAND CARD AH)
+           Look at the first set of contrasting images. If you think that "The
+           world is basically filled with evil and sin," you would place
+           yourself at 1. If you think "There is much goodness in the world
+           which hints at God's goodness" you would place yourself at 7. If you
+           think things are somewhere between these two you would place yourself
+           at 2, 3,4, 5 or 6. (REPEAT EXAMPLE AS NECESSARY FOR EACH ITEM A-F)
+           Where would you place your image of the world on the scale for . . .?
+           (READ EACH SET AND CIRCLE ONE CODE FOR EACH)
+
+           VALUE  LABEL
+               1  the good must act
+               7  good must beware
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/333-334
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 82
+
+
+      world3             World image:god not here vs. here
+
+           People have different images of the world and human nature. We'd like
+           to know the kinds of images you have. Here is a card with sets of
+           contrasting images. On a scale of 1-7 where would you place your
+           image of the world  and human nature between the two contrasting
+           images? (HAND CARD AH)
+           Look at the first set of contrasting images. If you think that "The
+           world is basically filled with evil and sin," you would place
+           yourself at 1. If you think "There is much goodness in the world
+           which hints at God's goodness" you would place yourself at 7. If you
+           think things are somewhere between these two you would place yourself
+           at 2, 3,4, 5 or 6. (REPEAT EXAMPLE AS NECESSARY FOR EACH ITEM A-F)
+           Where would you place your image of the world on the scale for . . .?
+           (READ EACH SET AND CIRCLE ONE CODE FOR EACH)
+
+           VALUE  LABEL
+               1  god not here
+               7  god is here
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/336-337
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 83
+
+
+      world4             World image:man is good vs. corrupt
+
+           People have different images of the world and human nature. We'd like
+           to know the kinds of images you have. Here is a card with sets of
+           contrasting images. On a scale of 1-7 where would you place your
+           image of the world  and human nature between the two contrasting
+           images? (HAND CARD AH)
+           Look at the first set of contrasting images. If you think that "The
+           world is basically filled with evil and sin," you would place
+           yourself at 1. If you think "There is much goodness in the world
+           which hints at God's goodness" you would place yourself at 7. If you
+           think things are somewhere between these two you would place yourself
+           at 2, 3,4, 5 or 6. (REPEAT EXAMPLE AS NECESSARY FOR EACH ITEM A-F)
+           Where would you place your image of the world on the scale for . . .?
+           (READ EACH SET AND CIRCLE ONE CODE FOR EACH)
+
+           VALUE  LABEL
+               1  people are good
+               7  people are evil
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/339-340
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 84
+
+
+      world5             World image:arts are good vs. not
+
+           People have different images of the world and human nature. We'd like
+           to know the kinds of images you have. Here is a card with sets of
+           contrasting images. On a scale of 1-7 where would you place your
+           image of the world  and human nature between the two contrasting
+           images? (HAND CARD AH)
+           Look at the first set of contrasting images. If you think that "The
+           world is basically filled with evil and sin," you would place
+           yourself at 1. If you think "There is much goodness in the world
+           which hints at God's goodness" you would place yourself at 7. If you
+           think things are somewhere between these two you would place yourself
+           at 2, 3,4, 5 or 6. (REPEAT EXAMPLE AS NECESSARY FOR EACH ITEM A-F)
+           Where would you place your image of the world on the scale for . . .?
+           (READ EACH SET AND CIRCLE ONE CODE FOR EACH)
+
+           VALUE  LABEL
+               1  arts can be holy
+               7  arts can be evil
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/342-343
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 85
+
+
+      world6             World image:chaos vs. harmony
+
+           People have different images of the world and human nature. We'd like
+           to know the kinds of images you have. Here is a card with sets of
+           contrasting images. On a scale of 1-7 where would you place your
+           image of the world  and human nature between the two contrasting
+           images? (HAND CARD AH)
+           Look at the first set of contrasting images. If you think that "The
+           world is basically filled with evil and sin," you would place
+           yourself at 1. If you think "There is much goodness in the world
+           which hints at God's goodness" you would place yourself at 7. If you
+           think things are somewhere between these two you would place yourself
+           at 2, 3,4, 5 or 6. (REPEAT EXAMPLE AS NECESSARY FOR EACH ITEM A-F)
+           Where would you place your image of the world on the scale for . . .?
+           (READ EACH SET AND CIRCLE ONE CODE FOR EACH)
+
+           VALUE  LABEL
+               1  world is chaotic
+               7  world is harmonious
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/345-346
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 86
+
+
+      world7             World image:ach. reveals god vs. not
+
+           People have different images of the world and human nature. We'd like
+           to know the kinds of images you have. Here is a card with sets of
+           contrasting images. On a scale of 1-7 where would you place your
+           image of the world  and human nature between the two contrasting
+           images? (HAND CARD AH)
+           Look at the first set of contrasting images. If you think that "The
+           world is basically filled with evil and sin," you would place
+           yourself at 1. If you think "There is much goodness in the world
+           which hints at God's goodness" you would place yourself at 7. If you
+           think things are somewhere between these two you would place yourself
+           at 2, 3,4, 5 or 6. (REPEAT EXAMPLE AS NECESSARY FOR EACH ITEM A-F)
+           Where would you place your image of the world on the scale for . . .?
+           (READ EACH SET AND CIRCLE ONE CODE FOR EACH)
+
+           VALUE  LABEL
+               1  action reveals god
+               7  most acts are vain
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/348-349
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 87
+
+
+      happy              General happiness
+
+           Taken all together, how would you say things are these days--would
+           you say that you are very happy, pretty happy, or not too happy?
+
+           VALUE  LABEL
+               1  very happy
+               2  pretty happy
+               3  not too happy
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/351-352
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 88
+
+
+      hapmar             Happiness of marriage
+
+           A. Taking things all together, how would you describe your marriage?
+           Would you say that your marriage is very happy, pretty happy, or not
+           too happy?
+
+           VALUE  LABEL
+               1  very happy
+               2  pretty happy
+               3  not too happy
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/354-355
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 89
+
+
+      health             Condition of health
+
+           Would you say your own health, in general, is excellent, good, fair,
+           or  poor?
+
+           VALUE  LABEL
+               1  excellent
+               2  good
+               3  fair
+               4  poor
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/357-358
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
+
+
+
+      GSS 1972-2024 Cumulative Datafile - Release 1                    Page 90
+
+
+      life               Is life exciting or dull
+
+           In general, do you find life exciting, pretty routine, or dull?
+
+           VALUE  LABEL
+               1  exciting
+               2  routine
+               3  dull
+              .d  don't know
+              .i  iap
+              .j  I don't have a job
+              .m  dk, na, iap
+              .n  no answer
+              .p  not imputable
+              .r  refused
+              .s  skipped on web
+              .u  uncodeable
+              .x  not available in this release
+              .y  not available in this year
+              .z  see codebook
+
+           Data type: numeric
+           Missing-data codes: .d,.i,.j,.m,.n,.p,.r,.s,.u,.x,.y,.z
+           Record/columns: 1/360-361
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   March 20, 2026
