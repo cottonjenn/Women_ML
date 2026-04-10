@@ -3,3 +3,4 @@ venv/
 .venv12/
 
 __pycache__/
+work/.DS_Store
