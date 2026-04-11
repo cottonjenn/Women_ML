@@ -22,18 +22,11 @@
 
 | Section | Description |
 |---|---|
-| 📋 Dataset Overview | Key statistics and variable descriptions |
-| 📈 EDA: Happiness Trends | Gender happiness gap visualized over 50+ years |
-| 🤖 Supervised Learning | Logistic Regression + Random Forest classifiers |
-| 🔵 K-Means Clustering | Latent wellbeing profiles via unsupervised learning |
+| Dataset Overview | Key statistics and variable descriptions |
+| EDA: Happiness Trends | Gender happiness gap visualized over 50+ years |
+| Supervised Learning | Logistic Regression + Random Forest classifiers |
+| K-Means Clustering | Latent wellbeing profiles via unsupervised learning |
 
-## Deploying to Streamlit Community Cloud
-
-1. Push this repo to GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Connect your GitHub repo and deploy `app.py`
-4. Add `ACTUAL_qol.csv` via Streamlit Secrets or include it in `data/`
-5. Paste the deployment URL in this README
 
 ## Ethical Notes
 
