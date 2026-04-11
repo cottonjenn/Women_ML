@@ -3,12 +3,13 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+ 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
+from sklearn.manifold import TSNE
 from sklearn.metrics import classification_report, confusion_matrix, roc_curve, auc
 from sklearn.inspection import permutation_importance
 from imblearn.over_sampling import SMOTE
@@ -17,7 +18,6 @@ from collections import Counter
 # ─── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="The Gender Happiness Gap",
-    page_icon="📊",
     layout="wide",
 )
 
@@ -121,7 +121,6 @@ st.markdown("""
 @st.cache_data
 def load_data():
     df = pd.read_csv("data/ACTUAL_qol.csv")
-
     # Structural NA fill (marriage-related)
     for col in ['divorce', 'widowed', 'hapmar']:
         df[col] = df[col].fillna('never married')
@@ -219,7 +218,7 @@ if section == "📋 Dataset Overview":
 # ═══════════════════════════════════════════════════════════════════════════════
 # SECTION 2: EDA
 # ═══════════════════════════════════════════════════════════════════════════════
-elif section == "📈 EDA: Happiness Trends":
+elif section == "EDA: Happiness Trends":
     st.markdown('<div class="section-header"><h2>Exploratory Data Analysis</h2><p>Visualizing the gender happiness gap across five decades</p></div>', unsafe_allow_html=True)
 
     # Trend over time
@@ -287,7 +286,7 @@ elif section == "📈 EDA: Happiness Trends":
 # ═══════════════════════════════════════════════════════════════════════════════
 # SECTION 3: Supervised Learning
 # ═══════════════════════════════════════════════════════════════════════════════
-elif section == "🤖 Supervised Learning":
+elif section == "Supervised Learning":
     st.markdown('<div class="section-header"><h2>Supervised Learning</h2><p>Logistic Regression & Random Forest classifiers for predicting happiness</p></div>', unsafe_allow_html=True)
 
     tab1, tab2 = st.tabs(["Logistic Regression", "Random Forest"])
@@ -434,31 +433,31 @@ elif section == "🤖 Supervised Learning":
 # ═══════════════════════════════════════════════════════════════════════════════
 # SECTION 4: K-Means Clustering
 # ═══════════════════════════════════════════════════════════════════════════════
-elif section == "🔵 K-Means Clustering":
+elif section == "K-Means Clustering":
     st.markdown('<div class="section-header"><h2>K-Means Clustering</h2><p>Discovering latent wellbeing profiles in the GSS data</p></div>', unsafe_allow_html=True)
-
+ 
     with st.spinner("Running K-Means clustering..."):
         km_df = pd.read_csv("data/ACTUAL_qol.csv")
         km_df['age_health_interaction'] = km_df['age'] * km_df['health_new']
         km_df['years_married'] = (km_df['age'] - km_df['agewed']).fillna(0)
-
+ 
         features = ['happy_new', 'health_new', 'life_new', 'educ', 'age', 'age_health_interaction', 'years_married']
         X_km = km_df[features].dropna()
-
+ 
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X_km)
-
+ 
         kmeans = KMeans(n_clusters=4, init='k-means++', random_state=42)
         X_km = X_km.copy()
         X_km['cluster'] = kmeans.fit_predict(X_scaled)
-
+ 
     st.markdown("#### Elbow Method — Choosing K")
     wcss = []
     for i in range(1, 11):
         km_temp = KMeans(n_clusters=i, init='k-means++', random_state=42)
         km_temp.fit(X_scaled)
         wcss.append(km_temp.inertia_)
-
+ 
     fig, ax = plt.subplots(figsize=(8, 4))
     ax.plot(range(1, 11), wcss, marker='o', color='#0f3460', linewidth=2)
     ax.axvline(x=4, color='#e8c5a0', linestyle='--', label='Chosen K=4')
@@ -469,37 +468,62 @@ elif section == "🔵 K-Means Clustering":
     ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
     st.pyplot(fig, use_container_width=True)
     plt.close()
-
+ 
     st.markdown("---")
     st.markdown("#### Cluster Profiles — Mean Feature Values")
     cluster_summary = X_km.groupby('cluster').mean().round(2)
     cluster_summary.index = [f"Cluster {i}" for i in cluster_summary.index]
-
+ 
     st.dataframe(cluster_summary, use_container_width=True)
-
+ 
     st.markdown("---")
-    st.markdown("#### Cluster Visualization: Happiness vs. Health")
-    fig, ax = plt.subplots(figsize=(10, 6))
-    palette = ['#0f3460', '#e8c5a0', '#a0b4c8', '#1a1a2e']
-    for c in range(4):
-        sub = X_km[X_km['cluster'] == c]
-        ax.scatter(
-            sub['health_new'] + np.random.uniform(-0.1, 0.1, len(sub)),
-            sub['happy_new'] + np.random.uniform(-0.1, 0.1, len(sub)),
-            alpha=0.15, s=8, color=palette[c], label=f'Cluster {c}'
-        )
-    ax.set_xlabel("Health Status (1=Poor → 4=Excellent)")
-    ax.set_ylabel("Happiness (0=Not Too Happy → 2=Very Happy)")
-    ax.set_title("K-Means Clusters: Happiness vs. Health")
-    ax.legend(markerscale=3)
-    ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
+    st.markdown("#### t-SNE Visualization — K=4 vs K=6 Clusters")
+    st.markdown("t-SNE compresses the 7 feature dimensions down to 2D so we can visually inspect how well the clusters separate. We sample 3,000 respondents for speed.")
+ 
+    with st.spinner("Running t-SNE (this takes ~20 seconds)..."):
+        # Fit K=4 and K=6 on the full scaled data
+        kmeans4 = KMeans(n_clusters=4, random_state=42).fit(X_scaled)
+        kmeans6 = KMeans(n_clusters=6, random_state=42).fit(X_scaled)
+ 
+        # Sample for t-SNE speed
+        sample_idx = np.random.RandomState(42).choice(len(X_scaled), size=min(3000, len(X_scaled)), replace=False)
+        X_sample = X_scaled[sample_idx]
+        labels4_sample = kmeans4.labels_[sample_idx]
+        labels6_sample = kmeans6.labels_[sample_idx]
+ 
+        tsne = TSNE(n_components=2, perplexity=30, random_state=42)
+        X_tsne = tsne.fit_transform(X_sample)
+ 
+    fig, axes = plt.subplots(1, 2, figsize=(16, 6))
+ 
+    sns.scatterplot(x=X_tsne[:, 0], y=X_tsne[:, 1], hue=labels4_sample,
+                    palette='viridis', alpha=0.6, s=15, ax=axes[0], legend='full')
+    axes[0].set_title("K=4 Clusters", fontsize=13, fontweight='bold')
+    axes[0].set_xlabel("t-SNE Dimension 1")
+    axes[0].set_ylabel("t-SNE Dimension 2")
+    axes[0].spines['top'].set_visible(False)
+    axes[0].spines['right'].set_visible(False)
+    axes[0].get_legend().set_title("Cluster")
+ 
+    sns.scatterplot(x=X_tsne[:, 0], y=X_tsne[:, 1], hue=labels6_sample,
+                    palette='tab10', alpha=0.6, s=15, ax=axes[1], legend='full')
+    axes[1].set_title("K=6 Clusters", fontsize=13, fontweight='bold')
+    axes[1].set_xlabel("t-SNE Dimension 1")
+    axes[1].set_ylabel("t-SNE Dimension 2")
+    axes[1].spines['top'].set_visible(False)
+    axes[1].spines['right'].set_visible(False)
+    axes[1].get_legend().set_title("Cluster")
+ 
+    plt.suptitle("t-SNE: Visualizing Cluster Structure in 2D", fontsize=14, y=1.02)
+    plt.tight_layout()
     st.pyplot(fig, use_container_width=True)
     plt.close()
-
+ 
     st.markdown("---")
-    st.markdown("#### Cluster Sizes & Happiness Distribution")
+    st.markdown("#### Cluster Sizes & Mean Happiness")
+    palette = ['#0f3460', '#e8c5a0', '#a0b4c8', '#1a1a2e']
     col1, col2 = st.columns(2)
-
+ 
     with col1:
         cluster_counts = X_km['cluster'].value_counts().sort_index()
         fig, ax = plt.subplots(figsize=(5, 4))
@@ -510,7 +534,7 @@ elif section == "🔵 K-Means Clustering":
         ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
         st.pyplot(fig, use_container_width=True)
         plt.close()
-
+ 
     with col2:
         fig, ax = plt.subplots(figsize=(5, 4))
         cluster_happy = X_km.groupby('cluster')['happy_new'].mean()
@@ -522,9 +546,10 @@ elif section == "🔵 K-Means Clustering":
         ax.spines['top'].set_visible(False); ax.spines['right'].set_visible(False)
         st.pyplot(fig, use_container_width=True)
         plt.close()
-
+ 
     st.markdown("""
     **Key takeaways from clustering:**
+    - The t-SNE plots show that K=4 produces cleaner, more separated clusters than K=6 — supporting our elbow choice
     - The 4 clusters reveal distinct wellbeing profiles not reducible to a single dimension
     - Higher-happiness clusters tend to co-occur with better health and more exciting lives (`life_new`)
     - Age and marital duration (`years_married`) also differentiate clusters — pointing to life-stage effects
