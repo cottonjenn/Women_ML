@@ -2,7 +2,7 @@
 
 **Project:** Predicting & Profiling Women's Wellbeing in America  
 **Data Source:** General Social Survey (GSS) 1972–2024, NORC at the University of Chicago  
-**Live app:** _publish on Streamlit Community Cloud and paste link here_
+**Live app:** [https://women-ml.streamlit.app/](https://women-ml.streamlit.app/)
 
 ---
 

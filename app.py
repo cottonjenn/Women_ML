@@ -165,7 +165,7 @@ NORC at the University of Chicago
 # ═══════════════════════════════════════════════════════════════════════════════
 # SECTION 1: Dataset Overview
 # ═══════════════════════════════════════════════════════════════════════════════
-if section == "📋 Dataset Overview":
+if section == "Dataset Overview":
     st.markdown('<div class="section-header"><h2>Dataset Overview</h2><p>Key facts about the GSS data used in this project</p></div>', unsafe_allow_html=True)
 
     col1, col2, col3, col4 = st.columns(4)
