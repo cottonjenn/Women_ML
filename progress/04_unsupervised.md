@@ -1,4 +1,4 @@
-# Supervised Modeling Checkpoint
+# Unsupervised Modeling Checkpoint
 
 ### 1) Problem Context and Research Question
 The goal of this project is to predict individual happiness levels, specifically identifying factors that lead to being "very happy" vs otherwise ("pretty happy", "not too happy", or both), using demographic and quality-of-life variables from a subset of the GSS (General Social Survey) dataset. This analysis seeks to determine: "Which life factors (e.g., health, marital status, work status, etc.) are the strongest predictors of subjective well-being AKA happiness?"
@@ -37,3 +37,5 @@ The t-SNE plots reveal an interesting structure in the data. In the left plot (K
 
 ### 5) Final Takeaways
 The unsupervised model we chose to use adds little value to what the supervised models have already been developed. The overlap between clusters and inability to effectively group the data shows us that the data does not naturally seperate itself. This could indicate that correct classification may be difficult on this dataset. Our best supervised model was able to achieve 73.7% accuracy, which is impressive considering the data does not naturally group, as shown by the k-means clustering approach.
+
+The fact that our best model achieves 74% accuracy despite the data not separating naturally into clusters suggests the predictive signal comes from specific feature combinations rather than latent group structure.
