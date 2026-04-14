@@ -10,8 +10,6 @@ We implemented a K-means clustering algorithm as an unsupervised learning method
 | :--- | :--- | :--- | :--- |
 | **K-means Clustering** | N clsuters = 3, 4, 6 | Silhouette scores, Inertia (WCSS) | Davies-Bouldin Index for K=4: 1.5752, Purity Score for K=4: 0.5529, Davies-Bouldin Index for K=6: 1.6080, Purity Score for K=6: 0.5912  |
 
-![Diagram](/work/images/elbow.png)
-
 ### 3) Model Comparison and Selection
 * **Selecting K**: Pronounced elbows can be seen at K=4 and K=6 clusters. There was some initial interest in clustering at K=3 as well. When looking at the silhouette scores for each K, both K=4 and K=6 were better than K=3 by about 0.004-0.005. Regardless, none of the scores indicate great clustering.
 Silhouette Score for k=3: 0.1808
